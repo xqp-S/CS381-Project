@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Wick - FOX cinema</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="css/w3.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="homepage.html">
+          <img src="images/logo.png" alt="FOXcinema Logo" class="logo-image" />
+        </a>
+      </div>
+      <div class="search-container">
+        <div class="search-icon"></div>
+        <input type="text" class="search-input" placeholder="Search for Movies" />
+        <button class="search-btn">Search</button>
+      </div>
+      <div class="header-actions">
+        <div class="location-dropdown"><span>Riyadh</span></div>
+        <button class="sign-in-btn">Sign in</button>
+        <div class="menu-toggle"></div>
+      </div>
+    </div>
+  </header>
+
+ 
+  <div class="movie-container">
+    <div class="container">
+      <div class="w3-row movie-main">
+        <!-- Movie Poster -->
+        <div class="w3-col l3 m4 s12">
+          <div class="movie-poster-large">
+            <img src="images/movieExample.jpeg" alt="John Wick" class="poster-img">
+          </div>
+        </div>
+        
+       
+        <div class="w3-col l9 m8 s12">
+          <div class="movie-details">
+            <h1 class="movie-title">John Wick</h1>
+            <div class="movie-meta">
+              <span class="movie-rating">★ 8.5/10</span>
+              <span class="movie-duration">101 min</span>
+              <span class="movie-genre">Action, Thriller</span>
+            </div>
+            <p class="movie-description">
+              An ex-hitman comes out of retirement to track down the gangsters who killed his dog and took everything from him.
+            </p>
+            <div class="movie-buttons">
+              <button class="w3-button w3-red book-btn">Book Tickets</button>
+              <button class="w3-button w3-dark-grey trailer-btn">Watch Trailer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Showtimes -->
+      <div class="showtimes-section">
+        <h2 class="section-title">Showtimes</h2>
+        <div class="date-selector">
+          <button class="date-btn active">Today</button>
+          <button class="date-btn">Tomorrow</button>
+          <button class="date-btn">Wed, Apr 12</button>
+        </div>
+        
+        <div class="cinema-location">
+          <h3>FOXcinema Riyadh</h3>
+          <div class="time-slots">
+            <button class="time-slot">10:30 AM</button>
+            <button class="time-slot">1:45 PM</button>
+            <button class="time-slot">5:00 PM</button>
+            <button class="time-slot">8:15 PM</button>
+            <button class="time-slot">10:30 PM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; FOXcinema.</p>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        
+        
+        <div class="social-links">
+          <a href="https://www.facebook.com/" class="social-icon"><img src="images/facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/" class="social-icon"><img src="images/instagram.png" alt="instagram"></a>
+          <a href="https://x.com/" class="social-icon"><img src="images/twitter.png" alt="x"></i></a>
+          <a href="https://www.youtube.com/" class="social-icon"><img src="images/youtube.png" alt="youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

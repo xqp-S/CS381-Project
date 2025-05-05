@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.admin-header {
+  background-color: #0d0c0c;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-img {
+  height: 8vh;
+  vertical-align: middle;
+  margin-left: 25px;
+}
+
+.booking-section {
+  margin: 40px auto;
+  max-width: 90%;
+}
+
+.w3-card {
+  margin-bottom: 20px;
+}
+
+.booking-card {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.booking-table {
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  
+}
+
+.booking-table th {
+  background-color: #333;
+  color: white;
+}
+
+.booking-table td,
+.booking-table th {
+  padding: 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+
+.booking-table th:nth-child(1),
+.booking-table td:nth-child(1) {
+  width: 40%;
+}
+
+.booking-table th:nth-child(2),
+.booking-table td:nth-child(2) {
+  width: 30%;
+}
+
+.booking-table th:nth-child(3),
+.booking-table td:nth-child(3) {
+  width: 30%;
+}
+

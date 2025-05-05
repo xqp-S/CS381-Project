@@ -1,0 +1,57 @@
+to be done :
+
+
+
+22-alert user when subscribing to email
+
+------------------------------------------------------------------------
+
+finished :
+
+20-edit on progress stages
+
+
+19-change regular tickets to ticket price
+
+12- connect showtime to database, and convert to a list 
+
+11- fix images resoultion -- !important! 
+
+16-add movies images in data base and project folder with movie id
+
+5-add format to data base
+
+6-add language option in data base
+
+7-add trailer video link in data base
+
+8-uniform reatings in data base
+
+10-change sign in button placeholder when signied in
+
+9-stick the steps on top of page and make it dynamic
+
+4-convert date to a combobox
+
+2-remove slider
+
+1-remove see all
+
+17-allow only one person to book for movie
+
+18-allow only one seat rteservation
+
+
+
+
+cancelled: 
+
+3-add 3 movies for quick ticket rteservation(cancelled)
+
+13- show other movie details like directors and stars and trailer url
+
+14- fix different button coloring in all pages
+
+15-change coming soon to recommended 
+
+21-change button "continue to payment" to 'confirm'

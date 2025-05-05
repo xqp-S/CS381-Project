@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - FOXcinema</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+</head>
+<body class="w3-black">
+  <div class="login-box">
+    <div class="logo-wrapper">
+      <a href="homepage.html">
+        <img src="images/logo.png" alt="FOXcinema Logo" class="login-logo" />
+      </a>
+    </div>
+
+    <form action="login_process.php" method="POST" class="w3-container login-form">
+      <label>Email</label>
+      <input class="w3-input custom-input" type="email" name="email" required>
+
+      <label>Password</label>
+      <input class="w3-input custom-input" type="password" name="password" required>
+
+      <button class="w3-button w3-red custom-btn" type="submit">Login</button>
+    </form>
+
+    <p class="w3-center login-footer-text">
+      Don't have an account? <a href="register.html">Register</a>
+    </p>
+  </div>
+</body>
+</html>

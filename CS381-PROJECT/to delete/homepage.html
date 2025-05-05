@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FOX cinema</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="css/w3.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="homepage.html">
+          <img src="images/logo.png" alt="FOXcinema Logo" class="logo-image" />
+        </a>
+      </div>
+      <div class="search-container">
+        <div class="search-icon"></div>
+        <input type="text" class="search-input" placeholder="Search for Movies" />
+        <button class="search-btn" onclick="window.location.href='search.html'">Search</button>
+      </div>
+      <div class="header-actions">
+        <div class="location-dropdown"><span>Riyadh</span></div>
+        <a href="#" id="signin-button" class="w3-button w3-red w3-round"></a>
+        <div class="menu-toggle"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero-banner">
+    <div class="hero-slide">
+      <img src="/api/placeholder/1200/400" alt="Featured Movie" class="hero-image" />
+      <div class="hero-content">
+        <h1 class="hero-title">Avengers: Endgame</h1>
+        <p class="hero-description">The epic conclusion to the Infinity Saga that became a critically acclaimed worldwide phenomenon.</p>
+        <button class="hero-cta">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="w3-container quick-booking">
+    <div class="w3-panel">
+      <h2>Quick Ticket Booking</h2>
+      <form class="booking-form">
+        <select class="booking-input">
+          <option>Select Movie</option>
+          <option>Avengers: Endgame</option>
+          <option>John Wick</option>
+          <option>The Lion King</option>
+        </select>
+        <select class="booking-input">
+          <option>Select Date</option>
+          <option>Today</option>
+          <option>Tomorrow</option>
+          <option>Apr 23, 2025</option>
+        </select>
+        <select class="booking-input">
+          <option>Select Time</option>
+          <option>10:00 AM</option>
+          <option>1:30 PM</option>
+          <option>7:00 PM</option>
+        </select>
+        <button class="booking-btn">Find Tickets</button>
+      </form>
+    </div>
+  </section>
+
+ 
+  <section class="w3-container recommended-movies" id="nowplaying-movies">
+    <div class="w3-panel">
+      <div class="section-header">
+        <h2 class="section-title">Now Playing</h2>
+      </div>
+  
+      <div class="w3-row-padding">
+  
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+  
+
+      <div class="w3-container w3-center">
+        <button class="w3-button w3-grey prev-arrow nav-button" onclick="slideMovies('nowplaying-movies','<')">&lt;</button>
+        <button class="w3-button w3-grey next-arrow nav-button" onclick="slideMovies('nowplaying-movies','>')">&gt;</button>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="w3-container recommended-movies"  id="comingsoon-movies">
+    <div class="w3-panel">
+      <div class="section-header">
+        <h2 class="section-title">Coming Soon</h2>
+      </div>
+      
+
+      <div class="w3-row-padding">
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="w3-col l2 m3 s6">
+          <a href="movie.html" class="movie-link">
+            <div class="w3-card movie-card">
+              <div class="movie-poster">
+                <img src="images/movieExample.jpeg" alt="Movie Poster" class="movie-poster-img" />
+                <span class="w3-tag w3-red badge">PROMOTED</span>
+              </div>
+              <div class="w3-container movie-info">
+                <h3 class="movie-title">John Wick</h3>
+                <p class="movie-genre">Genre: Action</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-center">
+        <button class="w3-button w3-grey prev-arrow nav-button" onclick="slideMovies('comingsoon-movies','<')">&lt;</button>
+        <button class="w3-button w3-grey next-arrow" onclick="slideMovies('comingsoon-movies','>')">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="newsletter">
+    <h2>Stay Updated</h2>
+    <p>Subscribe to our newsletter for exclusive offers, movie news, and special screenings.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Your Email Address" class="newsletter-input" required />
+      <button type="submit" class="newsletter-btn">Subscribe</button>
+    </form>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; FOXcinema.</p>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        
+        
+        <div class="social-links">
+          <a href="https://www.facebook.com/" class="social-icon"><img src="images/facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/" class="social-icon"><img src="images/instagram.png" alt="instagram"></a>
+          <a href="https://x.com/" class="social-icon"><img src="images/twitter.png" alt="x"></i></a>
+          <a href="https://www.youtube.com/" class="social-icon"><img src="images/youtube.png" alt="youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<script src="JS/checksignedin.js"></script>
+<script src="JS/slide.js"></script>

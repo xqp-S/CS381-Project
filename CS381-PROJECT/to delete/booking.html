@@ -1,0 +1,336 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>   
+  <meta charset="UTF-8" />   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
+  <title>Book Tickets - FOX cinema</title>   
+  <link rel="stylesheet" href="css/style.css" />   
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">   
+  <link rel="stylesheet" href="css/w3.css" />
+</head> 
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="homepage.html">
+          <img src="images/logo.png" alt="FOXcinema Logo" class="logo-image" />
+        </a>
+      </div>
+      <div class="search-container">
+        <div class="search-icon"></div>
+        <input type="text" class="search-input" placeholder="Search for Movies" />
+        <button class="search-btn" onclick="window.location.href='search.html'">Search</button>
+      </div>
+      <div class="header-actions">
+        <div class="location-dropdown"><span>Riyadh</span></div>
+        <a href="login.html" class="w3-button w3-red w3-round">Login</a>
+        <div class="menu-toggle"></div>
+      </div>
+    </div>
+  </header>   
+
+  <!-- Main Content -->   
+  <div class="booking-container w3-container">     
+    <div class="movie-details-b w3-round-large">       
+      <img src="/api/placeholder/120/180" alt="Movie Poster" class="movie-poster-small" />       
+      <div class="movie-info-details">         
+        <h1>Avengers: Endgame</h1>         
+        <div class="movie-metadata">           
+          <span>Action, Adventure, Sci-Fi | 3h 1min | PG-13</span>         
+        </div>         
+        <div class="screening-details">           
+          <p>Today, April 21 | 7:00 PM | Cinema Hall 3</p>         
+        </div>       
+      </div>     
+    </div>     
+    
+    <div class="booking-header-progress">       
+      <div class="booking-progress">         
+        <div class="booking-step active" id="s1">           
+          <div class="booking-step-number">1</div>           
+          <div class="booking-step-label">Select Seats</div>         
+        </div>         
+        <div class="booking-step" id="s2">           
+          <div class="booking-step-number">2</div>           
+          <div class="booking-step-label">Enter Details</div>         
+        </div>         
+        <div class="booking-step" id="s3">           
+          <div class="booking-step-number">3</div>           
+          <div class="booking-step-label">Payment</div>         
+        </div>         
+        <div class="booking-step" id="s4">           
+          <div class="booking-step-number">4</div>           
+          <div class="booking-step-label">Confirmation</div>         
+        </div>       
+      </div>     
+    </div>
+    
+    <div class="booking-section" id="div1">
+      <h2 class="w3-text-dark-grey">Select Your Seats</h2>
+      <p>Click on available seats to select them. Selected seats will be highlighted in red.</p><br><br>
+      
+      <div class="screen"></div>
+      
+      <div class="seats-container">
+       
+        <div class="seat-row">
+          <div class="row-identifier">A</div>
+          <div class="seat" data-seat="A1">A1</div>
+          <div class="seat" data-seat="A2">A2</div>
+          <div class="seat" data-seat="A3">A3</div>
+          <div class="seat" data-seat="A4">A4</div>
+          <div class="seat-gap"></div>
+          <div class="seat" data-seat="A5">A5</div>
+          <div class="seat" data-seat="A6">A6</div>
+          <div class="seat occupied" data-seat="A7">A7</div>
+          <div class="seat occupied" data-seat="A8">A8</div>
+          <div class="seat-gap"></div>
+          <div class="seat" data-seat="A9">A9</div>
+          <div class="seat" data-seat="A10">A10</div>
+          <div class="seat" data-seat="A11">A11</div>
+          <div class="seat" data-seat="A12">A12</div>
+        </div>
+        
+       
+        <div class="seat-row">
+          <div class="row-identifier">B</div>
+          <div class="seat" data-seat="B1">B1</div>
+          <div class="seat" data-seat="B2">B2</div>
+          <div class="seat occupied" data-seat="B3">B3</div>
+          <div class="seat occupied" data-seat="B4">B4</div>
+          <div class="seat-gap"></div>
+          <div class="seat" data-seat="B5">B5</div>
+          <div class="seat" data-seat="B6">B6</div>
+          <div class="seat" data-seat="B7">B7</div>
+          <div class="seat" data-seat="B8">B8</div>
+          <div class="seat-gap"></div>
+          <div class="seat occupied" data-seat="B9">B9</div>
+          <div class="seat occupied" data-seat="B10">B10</div>
+          <div class="seat" data-seat="B11">B11</div>
+          <div class="seat" data-seat="B12">B12</div>
+        </div>
+        
+        
+        <div class="seat-row">
+          <div class="row-identifier">C</div>
+          <div class="seat" data-seat="C1">C1</div>
+          <div class="seat" data-seat="C2">C2</div>
+          <div class="seat" data-seat="C3">C3</div>
+          <div class="seat" data-seat="C4">C4</div>
+          <div class="seat-gap"></div>
+          <div class="seat occupied" data-seat="C5">C5</div>
+          <div class="seat occupied" data-seat="C6">C6</div>
+          <div class="seat occupied" data-seat="C7">C7</div>
+          <div class="seat occupied" data-seat="C8">C8</div>
+          <div class="seat-gap"></div>
+          <div class="seat" data-seat="C9">C9</div>
+          <div class="seat" data-seat="C10">C10</div>
+          <div class="seat" data-seat="C11">C11</div>
+          <div class="seat" data-seat="C12">C12</div>
+        </div>
+        
+       
+        <div class="seat-row">
+          <div class="row-identifier">D</div>
+          <div class="seat" data-seat="D1">D1</div>
+          <div class="seat" data-seat="D2">D2</div>
+          <div class="seat" data-seat="D3">D3</div>
+          <div class="seat" data-seat="D4">D4</div>
+          <div class="seat-gap"></div>
+          <div class="seat" data-seat="D5">D5</div>
+          <div class="seat" data-seat="D6">D6</div>
+          <div class="seat" data-seat="D7">D7</div>
+          <div class="seat" data-seat="D8">D8</div>
+          <div class="seat-gap"></div>
+          <div class="seat" data-seat="D9">D9</div>
+          <div class="seat" data-seat="D10">D10</div>
+          <div class="seat occupied" data-seat="D11">D11</div>
+          <div class="seat occupied" data-seat="D12">D12</div>
+        </div>
+        
+        
+        <div class="seat-row">
+          <div class="row-identifier">E</div>
+          <div class="seat occupied" data-seat="E1">E1</div>
+          <div class="seat occupied" data-seat="E2">E2</div>
+          <div class="seat" data-seat="E3">E3</div>
+          <div class="seat" data-seat="E4">E4</div>
+          <div class="seat-gap"></div>
+          <div class="seat" data-seat="E5">E5</div>
+          <div class="seat" data-seat="E6">E6</div>
+          <div class="seat" data-seat="E7">E7</div>
+          <div class="seat" data-seat="E8">E8</div>
+          <div class="seat-gap"></div>
+          <div class="seat" data-seat="E9">E9</div>
+          <div class="seat" data-seat="E10">E10</div>
+          <div class="seat" data-seat="E11">E11</div>
+          <div class="seat" data-seat="E12">E12</div>
+        </div>
+        
+        
+        <div class="seat-row">
+          <div class="row-identifier">F</div>
+          <div class="seat" data-seat="F1">F1</div>
+          <div class="seat" data-seat="F2">F2</div>
+          <div class="seat" data-seat="F3">F3</div>
+          <div class="seat" data-seat="F4">F4</div>
+          <div class="seat-gap"></div>
+          <div class="seat selected" data-seat="F5">F5</div>
+          <div class="seat selected" data-seat="F6">F6</div>
+          <div class="seat" data-seat="F7">F7</div>
+          <div class="seat" data-seat="F8">F8</div>
+          <div class="seat-gap"></div>
+          <div class="seat" data-seat="F9">F9</div>
+          <div class="seat" data-seat="F10">F10</div>
+          <div class="seat" data-seat="F11">F11</div>
+          <div class="seat" data-seat="F12">F12</div>
+        </div>
+      </div>
+      
+      <div class="seat-legend">
+        <div class="legend-item">
+          <div class="legend-box available-box"></div>
+          <span>Available</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-box selected-box"></div>
+          <span>Selected</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-box occupied-box"></div>
+          <span>Occupied</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="booking-section" id="div2">
+      <h2 class="w3-text-dark-grey">Enter Person Details</h2>
+      <p>Please provide details for each ticket (2 selected seats).</p>
+      
+      <div class="persons-details">
+       
+        <div class="person-form w3-round-large">
+          <div class="person-header">
+            <h3>Person 1 - Seat F5</h3>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control w3-input" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control w3-input" placeholder="Enter last name">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control w3-input" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control w3-input" placeholder="Enter phone number">
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="person-form w3-round-large">
+          <div class="person-header">
+            <h3>Person 2 - Seat F6</h3>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control w3-input" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control w3-input" placeholder="Enter last name">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control w3-input" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control w3-input" placeholder="Enter phone number">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="booking-section" id="div3">
+      <h2 class="w3-text-dark-grey">Booking Summary</h2>
+      
+      <div class="booking-summary w3-round-large">
+        <div class="summary-item">
+          <span>Movie</span>
+          <span>Avengers: Endgame</span>
+        </div>
+        <div class="summary-item">
+          <span>Date & Time</span>
+          <span>April 21, 2025 | 7:00 PM</span>
+        </div>
+        <div class="summary-item">
+          <span>Cinema</span>
+          <span>Cinema Hall 3</span>
+        </div>
+        <div class="summary-item">
+          <span>Seats</span>
+          <span>F5, F6</span>
+        </div>
+        <div class="summary-item">
+          <span>Regular Ticket (×2)</span>
+          <span>50 SAR</span>
+        </div>
+        <div class="summary-item">
+          <span>Booking Fee</span>
+          <span>5 SAR</span>
+        </div>
+        <div class="summary-total">
+          <span>Total</span>
+          <span>55 SAR</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="action-buttons" id="div4">
+      <button class="back-btn w3-button">Back</button>
+      <button class="continue-btn w3-button">Continue to Payment</button>
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; FOXcinema.</p>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        
+        
+        <div class="social-links">
+          <a href="https://www.facebook.com/" class="social-icon"><img src="images/facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/" class="social-icon"><img src="images/instagram.png" alt="instagram"></a>
+          <a href="https://x.com/" class="social-icon"><img src="images/twitter.png" alt="x"></i></a>
+          <a href="https://www.youtube.com/" class="social-icon"><img src="images/youtube.png" alt="youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="JS\handleseats.js"></script>
+  <script src="JS/handleprogress.js"></script>
+</body>
+</html>

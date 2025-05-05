@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/w3.css" />
+  <link rel="stylesheet" href="CSS/admin.css">
+  <link rel="website icon" href="images/logo.png">
+
+</head>
+<body>
+
+  <div class="w3-bar-item w3-padding admin-header">
+    
+    
+    <span class="w3-bar-item w3-bold "> <img src="images/logo.png" class="logo-img" alt="Logo"> Admin Dashboard</span>
+    <a href="homepage.html" class="w3-bar-item w3-button w3-right">Logout</a>
+  </div>
+
+  <div class="w3-container admin-section">
+    <h2 class="w3-border-bottom w3-padding">Manage Movies</h2>
+
+    <div class="w3-card w3-white admin-card">
+      <table class="w3-table-all admin-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Movie 1</td>
+            <td>$10.99</td>
+            <td>
+              <button class="w3-button w3-small edit" onclick="showForm('updateForm')">Edit</button>
+              <button class="w3-button w3-small delete" onclick="showForm('removeForm')">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Movie 2</td>
+            <td>$20.00</td>
+            <td>
+              <button class="w3-button w3-small edit">Edit</button>
+              <button class="w3-button w3-small delete">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="w3-center">
+      <button class="w3-button w3-blue">Add New Movie</button>
+    </div>
+  </div>
+
+</body>
+</html>
